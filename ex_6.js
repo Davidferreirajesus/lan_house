@@ -6,5 +6,6 @@ function Calculo(){
   let tempo = Number(inTempo.value)
   let resultado = Math.ceil(tempo / 15)* valor
   inResultado.innerText = 'Valor a Pagar R$: ' + resultado.toFixed(2)
-
 }
+let btCalculo = document.getElementById('btCalculo')
+btCalculo.addEventListener('click', Calculo)
